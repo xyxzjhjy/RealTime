@@ -3,7 +3,7 @@ void setup() {
   //We know that the LED is at Port C pin 5
   
 GPIOC_PDDR |= (1U << 5); // led portC5 data direction register
-PORTC_PCR5 |= 0x00000102;  //Enable portC pin5 pull down resistor, bit 8 and 1
+PORTC_PCR5 |= 0x00000100;  //Mux GPIO, bit 8
 GPIOC_PDOR |= (1U << 5); // portC5 data output register
 }
 
